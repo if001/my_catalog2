@@ -11,6 +11,13 @@
       type: "string"
       required: true
       default: "my label"
+  questions:
+    - variable: replset_name
+      description: "description"
+      label: "label"
+      type: "string"
+      required: true
+      default: "my label"
   scale: 3
   retain_ip: true
   metadata:
