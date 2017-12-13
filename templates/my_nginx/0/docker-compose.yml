@@ -1,0 +1,4 @@
+my-nginx:
+  image: nginx:1.13.5-alpine
+  ports:
+    - "80:80"

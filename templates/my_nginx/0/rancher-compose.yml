@@ -1,0 +1,26 @@
+.catalog:
+  name: "Nginx"
+  version: "3.0.0-rancher1"
+  description: "my nginx"
+  uuid: nginx-0
+  minimum_rancher_version: v0.46.0
+  questions:
+    - variable: replset_name
+      description: "aaaaaaaaaaa"
+      label: "bbbbbbbbbbb"
+      type: "string"
+      required: true
+      default: "rs0"
+    - variable: debug
+      description: "cccccccccccccc"
+      label: "Debug"
+      type: "string"
+      required: false
+      default: ""
+mongo-cluster:
+  scale: 3
+  retain_ip: true
+  metadata:
+    mongo:
+      yml:
+        replset.name: "${replset_name}"
