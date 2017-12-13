@@ -4,3 +4,5 @@ my-nginx:
   image: nginx:1.13.5-alpine
   ports:
     - 8181:80/tcp
+  command: bash
+  tty : true
