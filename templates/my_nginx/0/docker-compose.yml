@@ -1,6 +1,8 @@
-my-nginx:
+MyNginx:
   restart: always
-  build: .
   image: nginx:1.13.5-alpine
+  port:
+    ${PORT}:80
+  working_dir: "/etc/nginx"
   command: bash
   tty : true
