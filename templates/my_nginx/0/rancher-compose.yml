@@ -11,13 +11,18 @@
       type: "string"
       required: true
       default: "my label"
-  questions:
-    - variable: replset_name
-      description: "description"
-      label: "label"
-      type: "string"
+    - variable: "SCALE"
+      label: "Scale"
+      description: "How many servers to run"
+      default: 1
       required: true
-      default: "my label"
+      type: "int"
+    - variable: "PORT"
+      label: "Port number"
+      description: "On which port should the Load Balancer listen?"
+      default: 8181
+      required: true
+      type: "int"
   scale: 3
   retain_ip: true
   metadata:
