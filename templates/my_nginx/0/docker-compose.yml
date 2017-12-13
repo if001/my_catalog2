@@ -1,5 +1,6 @@
 my-nginx:
+  restart: always
   build: .
   image: nginx:1.13.5-alpine
   ports:
-    - "80:80"
+    - 8080:80/tcp
