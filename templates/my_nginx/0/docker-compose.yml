@@ -1,4 +1,6 @@
 MyNginx:
+  label:
+    io.rancher.container.system: container
   ports:
   - ${PORT}:80/tcp
   tty: true
