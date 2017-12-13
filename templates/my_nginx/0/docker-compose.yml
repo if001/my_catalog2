@@ -1,7 +1,7 @@
 MyNginx:
   restart: always
   image: nginx:1.13.5-alpine
-  port:
+  ports:
     ${PORT}:80
   working_dir: "/etc/nginx"
   command: bash
