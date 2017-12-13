@@ -1,8 +1,10 @@
 MyNginx:
-  restart: always
-  image: nginx:1.13.5-alpine
   ports:
   - ${PORT}:80/tcp
+  tty: true
+  image: nginx:1.13.5-alpine
+  stdin_open: true
   working_dir: "/etc/nginx"
   command: bash
-  tty : true
+
+
