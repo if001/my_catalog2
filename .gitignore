@@ -1,2 +1,7 @@
 .*.swp
 *~
+./infra-templates/*
+./integration/*
+./kubernetes-templates/*
+./machine-templates/*
+./mesos-templates/*
