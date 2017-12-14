@@ -28,6 +28,6 @@
     mongo:
       yml:
         replset.name: "${replset_name}"
-version: '2'
-services:
-  scale: ${nginx_scale}
+# version: '2'
+# services:
+#   scale: ${nginx_scale}
