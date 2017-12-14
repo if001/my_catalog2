@@ -5,7 +5,4 @@ MyNginx:
   - ${PORT}:80/tcp
   tty: true
   image: nginx:1.13.5-alpine
-  stdin_open: true
   working_dir: "/etc/nginx"
-  command: nginx
-
