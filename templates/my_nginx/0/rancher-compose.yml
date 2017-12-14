@@ -11,7 +11,7 @@
       type: "string"
       required: true
       default: "my label"
-    - variable: "SCALE"
+    - variable: "nginx_scale"
       label: "Scale"
       description: "How many servers to run"
       default: 1
@@ -23,9 +23,10 @@
       default: 8181
       required: true
       type: "int"
-  scale: ${SCALE}
   retain_ip: true
   metadata:
     mongo:
       yml:
         replset.name: "${replset_name}"
+broker:
+  scale: ${nginx_scale}
