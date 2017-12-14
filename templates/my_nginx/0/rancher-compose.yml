@@ -23,7 +23,7 @@
       default: 8181
       required: true
       type: "int"
-  scale: 2
+  scale: ${SCALE}
   retain_ip: true
   metadata:
     mongo:

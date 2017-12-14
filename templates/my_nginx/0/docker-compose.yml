@@ -9,4 +9,3 @@ MyNginx:
   working_dir: "/etc/nginx"
   command: bash
 
-
