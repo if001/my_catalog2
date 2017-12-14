@@ -8,3 +8,5 @@ services:
     tty: true
     image: nginx:1.13.5-alpine
     working_dir: "/etc/nginx"
+    volumes:
+      - /var/www/html:/usr/share/nginx/html
