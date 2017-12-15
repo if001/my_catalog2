@@ -1,5 +1,5 @@
-name: Nginx
+name: Nginx2
 description: |
-  nginx
+  nginx2
 version: "3.4-rancher1"
 category: WebServer
