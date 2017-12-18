@@ -6,7 +6,8 @@ services:
     ports:
       - ${PORT}:80/tcp
     tty: true
-    image: 45.32.35.230:5000/mynginx/nginx:latest
+    image: 45.32.35.230:5000/test/ubuntu:17.10
+    # image: 45.32.35.230:5000/mynginx/nginx:latest
     # image: nginx:1.13.5-alpine
     working_dir: "/etc/nginx"
     volumes:
