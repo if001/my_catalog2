@@ -1,0 +1,5 @@
+name: Nginx
+description: |
+  kafka
+version: "3.4-rancher1"
+category: WebServer
