@@ -2,4 +2,4 @@ name: MY_NFS
 description: |
   NFS-backed
 version: v0.4.0
-category: my service
+category: myservice
