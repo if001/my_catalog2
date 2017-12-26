@@ -6,7 +6,7 @@ services:
     ports:
       - ${PORT}:80/tcp
     tty: true
-    image: if001/jenkins_test:latest
+    image: asia.gcr.io/accelia-might-596/nginx
     # image: nginx:1.13.5-alpine
     working_dir: "/etc/nginx"
     volumes:
