@@ -1,5 +1,5 @@
 .catalog:
-    name: "Convoy NFS"
+    name: "My NFS"
     version: "v0.1"
     description: "Convoy NFS - Docker volume plugin"
     maximum_rancher_version: v1.1.99
