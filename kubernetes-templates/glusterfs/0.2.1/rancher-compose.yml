@@ -1,5 +1,5 @@
 glusterfs-server:
-  scale: 3
+  scale: 2
   retain_ip: true
   metadata:
     volume_name: "my_vol"
