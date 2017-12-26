@@ -1,0 +1,14 @@
+version: '2'
+services:
+  MyNginx:
+    labels:
+      io.rancher.container.system: container
+    ports:
+      - ${PORT}:80/tcp
+    tty: true
+    image: 45.32.35.230:5000/test/ubuntu:17.10
+    # image: 45.32.35.230:5000/mynginx/nginx:latest
+    # image: nginx:1.13.5-alpine
+    working_dir: "/etc/nginx"
+    volumes:
+      - /var/www/html:/usr/share/nginx/html

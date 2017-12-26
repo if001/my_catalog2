@@ -1,0 +1,5 @@
+name: my_zookeeper
+description: |
+  zookeeper
+version: "3.4-rancher1"
+category: WebServer

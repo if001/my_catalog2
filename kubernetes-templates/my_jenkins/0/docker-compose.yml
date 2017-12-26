@@ -1,0 +1,13 @@
+version: '2'
+services:
+  jenkins:
+    build: .
+    labels:
+      io.rancher.container.hostname_override: container_name
+    ports:
+      - ${PORT}:8080/tcp
+      - 50000:50000
+    privileged: true
+    stdin_open: true
+    volumes:
+      - /var/jenkins_home

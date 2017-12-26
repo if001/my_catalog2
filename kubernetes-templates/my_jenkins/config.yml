@@ -1,0 +1,5 @@
+name: MyJenkins
+description: |
+  jenkins
+version: "3.4-rancher1"
+category: WebServer

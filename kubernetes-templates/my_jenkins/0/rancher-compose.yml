@@ -1,0 +1,30 @@
+.catalog:
+  name: "jenkins"
+  version: "ばーじょん"
+  description: "description1 my nginx"
+  uuid: nginx-0
+  minimum_rancher_version: v0.46.0
+  questions:
+    - variable: replset_name
+      description: "description"
+      label: "label"
+      type: "string"
+      required: true
+      default: "my label"
+    - variable: "nginx_scale"
+      label: "Scale"
+      description: "How many servers to run"
+      default: 1
+      required: true
+      type: "int"
+    - variable: "PORT"
+      label: "Port number"
+      description: "On which port should the Load Balancer listen?"
+      default: 8000
+      required: true
+      type: "int"
+  retain_ip: true
+  metadata:
+    mongo:
+      yml:
+        replset.name: "${replset_name}"

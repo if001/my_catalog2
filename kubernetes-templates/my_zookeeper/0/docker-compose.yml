@@ -1,0 +1,6 @@
+version: '2'
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - ${PORT}:2181
