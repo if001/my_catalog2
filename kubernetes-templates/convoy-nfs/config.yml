@@ -1,4 +1,4 @@
-name: Convoy NFS
+name: MY_NFS
 description: |
   Docker Volume Manager for NFS-backed Volumes
 version: v0.4.0
