@@ -1,0 +1,5 @@
+name: glusterfs
+description: |
+  glusterfs
+version: "3.4-rancher1"
+category: WebServer
