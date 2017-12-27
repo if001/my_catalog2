@@ -1,0 +1,5 @@
+name: KafkaManeger
+description: |
+  kafka maneger
+version: "3.4-rancher1"
+category: WebServer
