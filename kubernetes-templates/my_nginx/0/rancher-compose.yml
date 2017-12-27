@@ -3,7 +3,7 @@
   version: "ばーじょん"
   description: "description1 my nginx"
   uuid: nginx-0
-  minimum_rancher_version: v0.46.0
+  # minimum_rancher_version: v0.46.0
   questions:
     - variable: replset_name
       description: "description"
