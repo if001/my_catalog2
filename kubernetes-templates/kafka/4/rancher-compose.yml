@@ -75,11 +75,6 @@
       required: false
       default: false 
       type: "boolean"
-    # - variable: "kafka_host_ip"
-    #   label: "kafka host ip"
-    #   description: "host ip"
-    #   required: true
-    #   type: "int"
     - variable: "zk_link"
       description: |
         Choose the Zookeeper service to use.

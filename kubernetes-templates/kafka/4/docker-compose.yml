@@ -17,7 +17,6 @@ broker:
     - ADVERTISE_PUB_IP=${kafka_pub_ip}
     - KAFKA_AUTO_CREATE_TOPICS=${kafka_auto_create_topics}
     - KAFKA_REPLICATION_FACTOR=${kafka_replication_factor}
-    # - KAFKA_ADVERTISED_HOST_NAME=${kafka_host_ip}
   external_links:
     - ${zk_link}:zk
   labels: 
