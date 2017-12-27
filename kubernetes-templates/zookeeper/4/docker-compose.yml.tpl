@@ -14,6 +14,8 @@ services:
       - ZK_MAX_CLIENT_CXNS=${zk_max_client_cxns}
       - ZK_SYNC_LIMIT=${zk_sync_limit}
       - ZK_TICK_TIME=${zk_tick_time}
+    ports:
+      - "2181:2181"
     labels:
       io.rancher.scheduler.affinity:container_label_soft_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
       io.rancher.container.hostname_override: container_name
