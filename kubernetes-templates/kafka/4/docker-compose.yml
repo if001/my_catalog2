@@ -5,7 +5,7 @@ broker:
     - broker-volume
     - broker-conf
   ports:
-    - "9092"
+    - "9092":"9092"
   environment:
     - JVMFLAGS=-Xmx${kafka_mem}m -Xms${kafka_mem}m
     - CONFD_INTERVAL=${kafka_interval}
