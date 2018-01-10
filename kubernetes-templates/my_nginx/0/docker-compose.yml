@@ -6,8 +6,8 @@ services:
     ports:
       - ${PORT}:80/tcp
     tty: true
-    # image: asia.gcr.io/accelia-might-596/nginx:1.13.5-alpine
-    image: nginx:1.13.5-alpine
+    image: asia.gcr.io/accelia-might-596/nginx:1.13.5-alpine
+    # image: nginx:1.13.5-alpine
     working_dir: "/etc/nginx"
     volumes:
       - /var/www/html:/usr/share/nginx/html
