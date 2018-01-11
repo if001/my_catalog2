@@ -1,0 +1,10 @@
+version: '2'
+services:
+  template:
+    labels:
+      io.rancher.container.system: container
+    tty: true
+    # image: asia.gcr.io/accelia-might-596/nginx:1.13.5-alpine
+    # image: nginx:1.13.5-alpine
+    image: ${image}
+

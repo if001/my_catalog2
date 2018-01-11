@@ -1,0 +1,11 @@
+.catalog:
+  name: "template"
+  version: "ばーじょん"
+  description: "template"
+  uuid: template
+  questions:
+    - variable: "image"
+      label: "image"
+      description: "select images"
+      default: "alpine:latest"
+      type: "string"

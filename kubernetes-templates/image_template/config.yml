@@ -1,0 +1,5 @@
+name: image template
+description: |
+  image template
+version: "3.4-rancher1"
+category: WebServer
