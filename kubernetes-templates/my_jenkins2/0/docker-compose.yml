@@ -1,5 +1,5 @@
 jenkins-primary:
-  image: jenkins-inc-docker:2.92
+  image: asia.gcr.io/accelia-might-596/jenkins-inc-docker:2.92
   ports:
     - "${PORT}:8080"
   labels:
