@@ -1,12 +1,9 @@
-# My Nginx
+# Jenkins2
 
+Docker 入りJenkins
 
 ### Info:
 
-nginx てすと
-
-
 ### Usage:
 
-ゆーせーじ
 
