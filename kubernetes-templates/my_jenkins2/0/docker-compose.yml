@@ -1,5 +1,5 @@
 jenkins-primary:
-  build: .
+  # build: .
   # image: "jenkins/jenkins:2.92"
   image: myjenkins/jenkins:2.92
   ports:
