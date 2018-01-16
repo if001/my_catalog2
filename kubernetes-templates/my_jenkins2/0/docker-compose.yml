@@ -9,7 +9,7 @@ jenkins-primary:
     - jenkins-plugins
     - jenkins-datavolume
   volumes:
-    - /var/run/docker.sock
+    - /var/run/docker.sock:/var/run/docker.sock
   entrypoint: /usr/share/jenkins/rancher/jenkins.sh
 jenkins-plugins:
   image: rancher/jenkins-plugins:v0.1.1
