@@ -6,8 +6,9 @@ services:
     ports:
       - ${PORT}:80/tcp
     tty: true
-    image: asia.gcr.io/accelia-might-596/nginx:1.13.5-alpine
+    # image: asia.gcr.io/accelia-might-596/nginx:1.13.5-alpine
     # image: nginx:1.13.5-alpine
+    image: nginx
     working_dir: "/etc/nginx"
     volumes:
       - /var/www/html:/usr/share/nginx/html
@@ -18,3 +19,15 @@ services:
     - name: nginx-pvc
       persistentVolumeClaim:
        claimName: nfs-claim1
+
+
+
+          - name: nginx
+            containerPort: 80
+        volumeMounts:
+            - name: nfs
+              mountPath: "/usr/share/nginx/html"
+      volumes:
+      - name: nfs
+        persistentVolumeClaim:
+          claimName: nfs
