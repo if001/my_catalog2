@@ -1,7 +1,7 @@
 version: '2'
 services:
   jenkins:
-    build: if001/jenkins_test
+    image: if001/jenkins_test
     labels:
       io.rancher.container.hostname_override: container_name
     ports:
