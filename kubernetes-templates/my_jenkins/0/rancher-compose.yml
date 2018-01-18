@@ -1,7 +1,7 @@
 .catalog:
   name: "jenkins"
   version: "ばーじょん"
-  description: "description1 my nginx"
+  description: "description1"
   uuid: nginx-0
   minimum_rancher_version: v0.46.0
   questions:
