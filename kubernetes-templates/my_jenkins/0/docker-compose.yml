@@ -1,13 +1,22 @@
-version: '2'
-services:
-  jenkins:
-    image: if001/jenkins_test
-    labels:
-      io.rancher.container.hostname_override: container_name
-    ports:
-      - ${PORT}:8080/tcp
-      - 50000:50000
-    privileged: true
-    stdin_open: true
-    volumes:
-      - /var/jenkins_home
+jenkins-primary:
+  image: asia.gcr.io/accelia-might-596/jenkins-inc-docker:2.92
+  ports:
+    - "${PORT}:8080"
+  labels:
+    io.rancher.sidekicks: jenkins-plugins,jenkins-datavolume
+    io.rancher.container.hostname_override: container_name
+  volumes_from:
+    - jenkins-plugins
+    - jenkins-datavolume
+  # volumes:
+  #   - /var/run/docker.sock:/var/run/docker.sock
+  entrypoint: /usr/share/jenkins/rancher/jenkins.sh
+jenkins-plugins:
+  image: rancher/jenkins-plugins:v0.1.1
+jenkins-datavolume:
+  image: "busybox"
+  volumes:
+    - ${volume_work}:/var/jenkins_home
+  labels:
+    io.rancher.container.start_once: true
+  entrypoint: ["chown", "-R", "1000:1000", "/var/jenkins_home"]

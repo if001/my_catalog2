@@ -11,7 +11,7 @@
       type: "string"
       required: true
       default: "my label"
-    - variable: "nginx_scale"
+    - variable: "scale"
       label: "Scale"
       description: "How many servers to run"
       default: 1
