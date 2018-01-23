@@ -1,0 +1,5 @@
+name: MySpark
+description: |
+  spark
+version: "3.4-rancher1"
+category: WebServer
