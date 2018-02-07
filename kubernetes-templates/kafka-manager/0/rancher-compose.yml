@@ -2,7 +2,7 @@
   name: Kafka-manager
   version: 1.0.2-rancher1
   description: |
-    (Experimental) Apache Kafka cluster.
+    Kafka-manager.
   #minimum_rancher_version: v0.56.0
   maintainer: "Raul Sanchez <rawmind@gmail.com>"
   uuid: kafka-manager-0
@@ -15,18 +15,16 @@
       type: "int"
     - variable: "ZK_HOSTS"
       description: "zookeeper host ip. example [zk1_ip:port,zk2_ip:port]. not set space."
-      label: "hosts"
+      label: "zk hosts"
       required: true
       type: "string"
     - variable: "USERNAME"
       description: "basic auth username"
       required: true
-      type: "string"
-    - variable: "USERNAME"
-      description: "username for basic auth"
-      required: true
+      label: "username"
       type: "string"
     - variable: "PASSWORD"
       description: "password for basic auth"
+      label: "password"
       required: true
       type: "password"
