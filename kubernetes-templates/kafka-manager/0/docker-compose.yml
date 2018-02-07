@@ -6,7 +6,7 @@ services:
     ports:
       - ${PORT}:9000
     environment:
-      - ZK_HOSTS:${ZK_HOSTS}
-      - KAFKA_MANAGER_USERNAME:${USERNAME}
-      - KAFKA_MANAGER_PASSWORD:${PASSWORD}
+      - ZK_HOSTS=${ZK_HOSTS}
+      - KAFKA_MANAGER_USERNAME=${USERNAME}
+      - KAFKA_MANAGER_PASSWORD=${PASSWORD}
 
