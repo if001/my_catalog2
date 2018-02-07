@@ -1,0 +1,12 @@
+version: '2'
+services:
+  kafka-manager:
+    tty: true
+    image: asia.gcr.io/accelia-might-596/kafka-manager:1.0.0
+    ports:
+      - ${PORT}:9000
+    environment:
+      - ZK_HOSTS:${ZK_HOSTS}
+      - KAFKA_MANAGER_USERNAME:${USERNAME}
+      - KAFKA_MANAGER_PASSWORD:${PASSWORD}
+
